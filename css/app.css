@@ -6627,26 +6627,32 @@ th.hide-for-touch {
   .calendar table tr:nth-child(2) {
     border-top: none; }
 
-.payprof {
+.payprof, .contacts {
   list-style: none;
   margin: 0;
   background: white; }
-  .payprof li {
+  .payprof li, .contacts li {
     border-bottom: 5px solid #ddd; }
-    .payprof li:hover {
+    .payprof li span, .contacts li span {
+      display: block;
+      padding: 8px;
+      border-bottom: 1px solid #EEE; }
+      .payprof li span i, .contacts li span i {
+        color: #bbb; }
+    .payprof li:hover, .contacts li:hover {
       background-color: #d0e6ff; }
-      .payprof li:hover span {
+      .payprof li:hover span, .contacts li:hover span {
         border-color: #d0e6ff; }
-      .payprof li:hover i {
+      .payprof li:hover i, .contacts li:hover i {
         color: #3E4A58; }
-      .payprof li:hover svg path {
+      .payprof li:hover svg path, .contacts li:hover svg path {
         fill: #3E4A58; }
-    .payprof li a {
+    .payprof li a, .contacts li a {
       display: block;
       color: #3E4A58; }
-      .payprof li a i {
+      .payprof li a i, .contacts li a i {
         color: #bbb; }
-      .payprof li a span {
+      .payprof li a span, .contacts li a span {
         display: block;
         padding: 8px;
         border-bottom: 1px solid #EEE; }
@@ -7120,6 +7126,12 @@ ul.pagination {
   width: 100%;
   z-index: 9999;
   top: 0; }
+  .bcase-login.profile-cat
+.login-body {
+    text-align: center; }
+    .bcase-login.profile-cat
+.login-body p {
+      margin-bottom: 0 !important; }
 
 .login-wrap {
   width: 250px;
@@ -7190,7 +7202,7 @@ ul.pagination {
     max-width: 80%;
     width: 100%; }
 
-.addnew, .uploadfiles, .deletefile, .filefile, .dldl, .payment-profile {
+.addnew, .uploadfiles, .deletefile, .filefile, .dldl, .payment-profile, .profile-cat {
   display: none; }
 
 .blue-input, .tabs-content .content form select, .add-profiles input, .add-profiles select {

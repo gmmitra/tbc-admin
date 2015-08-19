@@ -330,8 +330,11 @@ right: -30px;}
 }
 
 
-.payprof {list-style:none; margin:0;background: white;
+.payprof, .contacts {list-style:none; margin:0;background: white;
   li { border-bottom: 5px solid #ddd;
+    span {display:block;padding: 8px; border-bottom: 1px solid #EEE; 
+         i {color: #bbb;}
+    }
    &:hover {background-color:#d0e6ff; 
     span {border-color:#d0e6ff;}
     i {color:#3E4A58;}
@@ -649,7 +652,11 @@ padding: 10px;}
 
 
 .bcase-login {background: rgba(0,0,0,.75); position: fixed; height:100%; width:100%; z-index:9999; top:0;
-
+  &.profile-cat {.login-body 
+    { text-align:center; 
+    p {margin-bottom:0 !important;}
+    }
+  }
 }
 
 .login-wrap { width: 250px; margin: 50px auto; background: $white; @include border-radius(5px); min-height:100px; overflow:hidden;
@@ -694,7 +701,7 @@ max-height: 86%;
     &.pprofile {max-width:80%; width: 100%;}
 }
 
-.addnew, .uploadfiles, .deletefile, .filefile, .dldl, .payment-profile {display:none;}
+.addnew, .uploadfiles, .deletefile, .filefile, .dldl, .payment-profile, .profile-cat {display:none;}
 .blue-input {border-color:$lightblueborder !important; background-color:$lightblue !important; box-shadow:none !important;}
 
 .cta-btn {background:#15b948; @include border-radius(5px); color:$white; border:0; padding: 7px 15px;min-width: 75px;

@@ -340,7 +340,7 @@
       </optgroup>
 </select>
  <span>OR</span>
-<button class="addbtn"><i class="icon-plus"></i>Add Category</button>
+<button class="addbtn catbtn"><i class="icon-plus"></i>Add Category</button>
                   </div>
 </div>
        <div class="large-12 columns"><hr class="linedivider"></div>
@@ -478,25 +478,37 @@
 </div>
 <!-- off-canvas-end -->    
 
-
-
-<div class="bcase-login payment-profile">
-    <div class="login-wrap pprofile">
-        <div class="headerwrap"><header>What Is Payment Profile? </header> <i class="icon-cancel closeit-modal"></i></div>
+<div class="bcase-login profile-cat">
+    <div class="login-wrap">
+        <div class="headerwrap"><header>Category</header><i class="icon-cancel closeit-modal"></i></div>
+        <form method="POST" action="briefcase-login.html">
           <div class="login-body">
-            <header>How do I get started?</header>
-            <p>Sign up for the Trial, Budget or Standard plan. You can upgrade at any time. 
-All you need is a starting bank balance from your bank statement and you're ready to begin! We provide customizable category templates that will have many of the categories common to most non-profit organizations. Get started now!</p>
+            <p>ADD CATEGORY</p>
+            
+              <p class="input-item"><input type="text" class="blue-input" placeholder="Category"></p>
+              <p>TO</p>
+            <p class="input-item"><select class="add-category-parent-name blue-input">  
+            <option value="">Select a Category Group</option>
+              
+                <option value="7" class="group1">Fundraising (Ways and Means)</option>
+            
+              
+                <option value="63" class="group2">Programs</option>
 
-<header>What if I need help?</header>
-
-<p>Paid accounts can receive help via email by sending us a note or question via the Contact Us page. We will respond to your question within 48 hours. 
-If you have selected the Standard plan you can also receive help right away over the phone from our knowledgable staff. 
-Trial accounts do not have access to support at this time, however can look for help via our Resource Center or the FAQ section.</p>
-           
+              
+                <option value="104" class="group3">Contributions, Gifts and Grants</option>
+              
+            
+          </select></p>
+            
+            <button class="cta-btn">Submit</button> <a class="cancel-btn" href="#">Cancel</a>
+            </form>
          </div>
     </div>
-</div> 
+</div>
+
+
+
 
 
 

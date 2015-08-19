@@ -210,9 +210,10 @@ if ( atLeastOneIsChecked !== 0) {
 });
 
 
-$( ".ppphint" ).click(function() {
+$( ".ppphint, .catbtn" ).click(function() {
 
-       $(".payment-profile").css("display","block");
+       $(".payment-profile, .profile-cat").css("display","block");
+      
        
 });
 
