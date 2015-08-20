@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="bower_components/fontello-tb/css/tb.css" />
     <!-- <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" /> -->
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="bower_components/foundation-datepicker-master/css/foundation-datepicker.min.css">
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -177,7 +178,7 @@
                       </select>
                     </div>
                     <div class="large-4 columns"><input type="text" class="search1" placeholder="Date, Check#, Amount"><button type="submit" class="srchbtn"><i class="icon-search"></i></button></div>
-                    <div class="large-4 columns"><input type="text" class="fromdate" placeholder="dd-mm-yy"> to <input type="text" class="fromdate" placeholder="dd-mm-yy"><button type="submit" class="srchbtn"><i class="icon-search"></i></button></div>
+                    <div class="large-4 columns"><input type="text" data-date class="fromdate calendar hasDatepicker fdatepicker" name="start_date" placeholder="dd-mm-yy"  data-date="12-02-2012"> to <input type="text" data-date="12-02-2012" class="fromdate calendar hasDatepicker fdatepicker"  name="end_date" placeholder="dd-mm-yy"><button type="submit" class="srchbtn"><i class="icon-search"></i></button></div>
                     <div class="large-4 columns entries"><span>show</span> 
                       <select>
                         <option>10 entries</option>
@@ -388,10 +389,10 @@
 
 
 
+
     </div>
 
 <!-- content wrap end -->
-
 
 
 
@@ -417,8 +418,15 @@
 </div> <!-- end of page-wrap -->
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jqueryte/jquery-te-1.4.0.min.js" charset="utf-8"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation-datepicker-master/js/foundation-datepicker.js"></script>
+    
     <script src="js/app.js"></script>
     <script src="js/tb.js"></script>
+    <script>
+      $('.fdatepicker').fdatepicker();
+    </script>
+
   </body>
 </html>
